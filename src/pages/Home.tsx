@@ -1,15 +1,21 @@
 
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from '../components/Layout/Header';
+import Footer from '../components/Layout/Footer';
+import { SEO } from '@/components/SEO';
 
-const HomeHome = () => {
+const Home = () => {
+
   return (
-    <div className="min-h-screen bg-amber-50">
-      <Header />
-      <Footer />
-    </div>
+    <>
+  
+     
+      <div>
+          <h1>hello home</h1>
+      </div>
+      
+    </>
   );
 };
 
-export default HomeHome;
+export default Home;

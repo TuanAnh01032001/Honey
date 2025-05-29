@@ -1,4 +1,13 @@
+:root {
+  --radius: 0.5rem;
+  --color-primary: #FDCB3A;
+  --color-secondary: #ECB02F;
+  --color-background: #fffefc;
+  --color-foreground: #1f2937;
+  --color-border: #e5e7eb;
+}
 #root {
+  
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
