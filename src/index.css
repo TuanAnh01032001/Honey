@@ -231,7 +231,7 @@
 
   /* ===== LOADING SPINNER ===== */
   .spinner {
-    @apply w-5 h-5 border-2 border-t-transparent border-primary rounded-full animate-spin;
+    @apply w-5 h-5 border-2 border-t-transparent border-honey-400 rounded-full animate-spin;
   }
 
   /* ===== ACCORDION ===== */
