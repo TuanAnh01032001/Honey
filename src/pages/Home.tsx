@@ -1,19 +1,17 @@
-
 import React from 'react';
 import Header from '../components/Layout/Header';
 import Footer from '../components/Layout/Footer';
 import { SEO } from '@/components/SEO';
-import ProductList from '@/components/Home/productlist';
+import { Award, Heart, Leaf } from 'lucide-react';
+
+import { ArrowRight } from 'lucide-react';
 
 const Home = () => {
-
   return (
     <>
-      <div className='flex-center'>
-          <h1>hello home</h1>
-          <ProductList/>
-      </div>
-      
+
+ 
+
     </>
   );
 };
