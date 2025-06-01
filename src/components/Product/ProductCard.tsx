@@ -7,7 +7,7 @@ interface ProductCardProps {
 
 const ProductCard = ({ product }: ProductCardProps) => {
   const renderStars = (rating: number) => {
-    return Array.from({ length: 5 }, (_, i) => (
+    return Array.from({ length: 5}, (_, i) => (
       <Star
         key={i}
         className={`w-3 h-3 ${

@@ -20,22 +20,22 @@ const Header = () => {
         <div className="flex justify-between items-center h-16 font-body text-[1.3rem] font-inherit ">
          
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            <a href="/" className="text-Black hover:text-amber-600 transition-colors">
+          <nav className="hidden md:flex space-x-8 text-black font-semibold">
+            <a href="/" className=" hover:text-amber-600 transition-colors">
               Home
             </a>
-            <a href="/honey" className="text-Black hover:text-amber-600 transition-colors">
+            <a href="/honey" className=" hover:text-amber-600 transition-colors">
               Products
             </a>
             
-            <a href="/blog" className="text-Black hover:text-amber-600 transition-colors">
+            <a href="/blog" className=" hover:text-amber-600 transition-colors">
               Blog
             </a>
 
-            <a href="/about" className="text-Black hover:text-amber-600 transition-colors">
+            <a href="/about" className=" hover:text-amber-600 transition-colors">
               About Us
             </a>
-            <a href="/contact" className="text-Black hover:text-amber-600 transition-colors">
+            <a href="/contact" className=" hover:text-amber-600 transition-colors">
               Contact
             </a>
           </nav>
