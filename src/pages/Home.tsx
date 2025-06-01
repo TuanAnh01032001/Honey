@@ -4,7 +4,7 @@
 // import { SEO } from '@/components/SEO';
 // import { Award, Heart, Leaf } from 'lucide-react';
 // import { ArrowRight } from 'lucide-react';
-import ProductList from '@/components/Home/Productlist';
+import Productlist from '@/components/Home/Productlist';
 import VideoSection from '@/components/Home/Video';
 
 // Home DataData
@@ -264,7 +264,7 @@ const Home = () => {
           <section id="shopify-section-template--14429389520970__featured_collection" className="shopify-section section section-featured-collection">
             <div className="color-background-1 isolate gradient">
               <div className="collection page-width page-width-desktop section-template--14429389520970__featured_collection-padding">
-               <ProductList/>
+               <Productlist/>
               </div>
             </div>
           </section>
