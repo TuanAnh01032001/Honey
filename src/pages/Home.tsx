@@ -1,9 +1,9 @@
-import React from 'react';
-import Header from '../components/Layout/Header';
-import Footer from '../components/Layout/Footer';
-import { SEO } from '@/components/SEO';
-import { Award, Heart, Leaf } from 'lucide-react';
-import { ArrowRight } from 'lucide-react';
+// import React from 'react';
+// import Header from '../components/Layout/Header';
+// import Footer from '../components/Layout/Footer';
+// import { SEO } from '@/components/SEO';
+// import { Award, Heart, Leaf } from 'lucide-react';
+// import { ArrowRight } from 'lucide-react';
 import ProductList from '@/components/Home/Productlist';
 import VideoSection from '@/components/Home/Video';
 
@@ -12,7 +12,6 @@ import {
   bannerData,
   richText1,
   richText2,
-  videoSection,
   textBlockSection, 
   imageWithText1,
   imageWithText2, 
