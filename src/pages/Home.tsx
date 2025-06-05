@@ -4,7 +4,7 @@
 // import { SEO } from '@/components/SEO';
 // import { Award, Heart, Leaf } from 'lucide-react';
 // import { ArrowRight } from 'lucide-react';
-import ProductList from '@/components/Home/Productlist';
+import ProductList from '@/components/Home/productlist ';
 
 import VideoSection from '@/components/Home/Video';
 
