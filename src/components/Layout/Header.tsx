@@ -13,8 +13,8 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col items-center ">
 
          {/* Logo */}
-          <div className="flex-shrink-0 justify-center items-center h-15">
-            <h1 className="text-5xl font-bold text-Black">Honey <br/>For Life</h1>
+          <div className="flex-shrink-0 justify-center items-center uppercase h-15">
+            <h1 className="text-5xl font-bold text-Black text-center">HANNA <br/>HONEY For Life</h1>
           </div>
 
         <div className="flex justify-between items-center h-16 font-body text-[1.3rem] font-inherit ">

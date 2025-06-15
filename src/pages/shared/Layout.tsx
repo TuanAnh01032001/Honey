@@ -1,4 +1,4 @@
-import { Footer, Header } from "@/components"
+import { Footer, Header, SocialSidebar } from "@/components"
 import { Outlet } from "react-router-dom"
 
 export const Layout = () => {
@@ -11,6 +11,7 @@ export const Layout = () => {
             <main className="flex-1 px-4 sm:px-6 lg:px-8 py-6">
                 <Outlet/>
             </main>
+            <SocialSidebar/>
            <footer>
                 <Footer/>
            </footer>

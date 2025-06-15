@@ -1,3 +1,4 @@
+import { BannerHeader, ProductList } from "@/components";
 import { SEO } from "@/components/SEO";
 
 const Product = () => {
@@ -12,7 +13,18 @@ const Product = () => {
             />
 
             <div>
-                <h1>hello product</h1>
+
+                <BannerHeader 
+                backgroundImage="../../public/images/banner_header_product.png" 
+                title="PURE BEE PRODUCTS"
+                backgroundPosition=""
+                >
+                    <p>
+                    PURE BEE PRODUCTS 
+                    </p>
+                </BannerHeader>
+
+                <ProductList/>
             </div>
         </>
     )
