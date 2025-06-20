@@ -37,13 +37,13 @@ const ProductCard = ({ product }: ProductCardProps) => {
       
       {/* Black footer with product info */}
       <div className="bg-black text-white p-4">
-        <h3 className="text-lg font-bold text-center mb-2 uppercase tracking-wide">
+        <h3 className="text-lg font-bold text-center mb-2 uppercase tracking-wide text-white">
           {product.name}
         </h3>
         
         <div className="flex items-center justify-center mb-2">
           <div className="flex">{renderStars(product.rating)}</div>
-          <span className="ml-2 text-sm text-gray-300">({product.reviews})</span>
+          <span className="ml-2 text-sm text-white">({product.reviews})</span>
         </div>
         
         <div className="text-center">

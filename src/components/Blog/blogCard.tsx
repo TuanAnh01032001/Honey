@@ -8,8 +8,9 @@ const BlogCard = ({ blog }: BlogCardProps) => {
  
 
   return (
-    <div className="bg-white rounded-lg overflow-hidden group cursor-pointer">
-      <div className="relative overflow-hidden">
+    <div className="bg-white rounded-lg overflow-hidden group cursor-pointer mb-8 min-h-[420px] flex flex-col">
+
+      <div className="relative overflow-hidden flex-1">
         {/* Main Image */}
         <img
           src={blog.image}
@@ -26,15 +27,23 @@ const BlogCard = ({ blog }: BlogCardProps) => {
       </div>
       
       {/* Black footer with blog info */}
-      <div className="bg-black text-white p-4">
+      <div className="bg-black text-white p-4 flex-1 flex flex-col justify-between">
         <h3 className="text-lg font-bold text-white text-center mb-2 uppercase tracking-wide">
           {blog.name}
         </h3>
         
      
         <div className="text-center">
-          <span className="text-orange-400 font-bold text-lg">{blog.price}</span>
+          <span
+            className="text-orange-400 font-bold text-lg line-clamp-2"
+            dangerouslySetInnerHTML={{
+              __html: blog.content
+                ? blog.content.replace(/<[^>]+>/g, '').slice(0, 120) + (blog.content.replace(/<[^>]+>/g, '').length > 120 ? '...' : '')
+                : ''
+            }}
+          />
         </div>
+      
       </div>
     </div>
   );

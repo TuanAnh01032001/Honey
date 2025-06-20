@@ -50,34 +50,41 @@ const Header = () => {
             </Button> */}
 
             {/* Mobile menu button */}
-            {/* <Button
-              variant="ghost"
-              size="sm"
-              className="md:hidden"
+            <button
+              className="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-amber-500"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-            </Button> */}
+              {isMenuOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
+            </button>
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation Overlay */}
         {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-              <a href="#home" className="block px-3 py-2 text-gray-700 hover:text-amber-600">
-                Home
-              </a>
-              <a href="#products" className="block px-3 py-2 text-gray-700 hover:text-amber-600">
-                Products
-              </a>
-              <a href="#about" className="block px-3 py-2 text-gray-700 hover:text-amber-600">
-                About Us
-              </a>
-              <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-amber-600">
-                Contact
-              </a>
+          <div className="fixed inset-0 z-50 bg-[#F7D375] flex flex-col h-full w-full animate-fade-in md:hidden">
+            {/* Top bar with close and cart/search */}
+            <div className="flex items-center justify-between px-6 py-4 border-b border-[#f3c96b]">
+              <button
+                onClick={() => setIsMenuOpen(false)}
+                className="flex items-center justify-center w-14 h-14 p-0 text-3xl font-bold text-black focus:outline-none focus:ring-2 focus:ring-amber-500 active:bg-[#ffe59e] rounded-full transition-all duration-150 hover:bg-[#ffe59e] cursor-pointer bg-transparent"
+                aria-label="Đóng menu"
+                tabIndex={0}
+                style={{ backgroundClip: 'padding-box' }}
+              >
+                <X className="h-8 w-8 pointer-events-none" />
+              </button>
+              <h2 className="text-3xl font-bold tracking-wide text-black text-center flex-1 -ml-8">HANA<br/>HONEY FOR LIFE</h2>
+             
             </div>
+            {/* Menu items: chỉ lấy từ Desktop Navigation */}
+            <nav className="flex-1 flex flex-col gap-2 px-6 py-8 text-lg font-semibold">
+              <a href="/" className="py-4 border-b border-[#f3c96b]">Home</a>
+              <a href="/honey" className="py-4 border-b border-[#f3c96b]">Products</a>
+              <a href="/blog" className="py-4 border-b border-[#f3c96b]">Blog</a>
+              <a href="/about" className="py-4 border-b border-[#f3c96b]">About Us</a>
+              <a href="/contact" className="py-4 border-b border-[#f3c96b]">Contact</a>
+            </nav>
+
           </div>
         )}
       </div>
