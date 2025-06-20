@@ -1,10 +1,13 @@
-import About from "@/pages/About";
-import Blog from "@/pages/Blog";
-import Contact from "@/pages/Contact";
-import Home from "@/pages/Home";
-import Product from "@/pages/Product";
 import { Layout } from "@/pages/shared/Layout";
+import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
+
+const Home = lazy(()=> import('@/pages/Home'));
+const Product = lazy(()=> import('@/pages/About'));
+const About = lazy(()=> import('@/pages/About'));
+const Contact = lazy(()=> import('@/pages/Contact'));
+const Blog = lazy(()=> import('@/pages/Blog'));
+
 
 const routes = createBrowserRouter([
     { 
