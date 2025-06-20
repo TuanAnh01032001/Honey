@@ -3,7 +3,7 @@ import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 
 const Home = lazy(()=> import('@/pages/Home'));
-const Product = lazy(()=> import('@/pages/About'));
+const Product = lazy(()=> import('@/pages/Product'));
 const About = lazy(()=> import('@/pages/About'));
 const Contact = lazy(()=> import('@/pages/Contact'));
 const Blog = lazy(()=> import('@/pages/Blog'));
