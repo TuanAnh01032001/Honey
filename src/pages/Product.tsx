@@ -20,7 +20,7 @@ const Product = () => {
                 backgroundPosition=""
                 >
                     <p>
-                    PURE BEE PRODUCTS 
+                         PURE BEE PRODUCTS 
                     </p>
                 </BannerHeader>
 

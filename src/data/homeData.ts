@@ -27,11 +27,11 @@ export const richText1 = {
   content: [
     `At Honey For Life, our passion lies in crafting the finest premium honey products. Our honey is 100% raw, natural, and sustainably sourced from the pristine old-growth forests, unique desert gold-fields, and our own reclaimed farmland Manuka plantations, in Western Australia. We believe in minimal human interaction because that’s the way nature intended it, and we aim to keep it that way.`,
   ],
-  saleText: [`Discover the purest form of <a href="/collections/super-active-honey">
-    <strong >Australian medicinal honey</strong>
-    </a> and elevate your life with the wholesome goodness of 
-    <a href="/collections/shop-all-premium-australian-honey-bee-products"><strong>Western Australian raw honey</strong>
-    </a> today.`],
+  saleText: [`
+    Discover the purest form of 
+    <a href="/collections/super-active-honey"><strong >Australian medicinal honey</strong></a> and elevate your life with the wholesome goodness of 
+    <a href="/collections/shop-all-premium-australian-honey-bee-products"><strong>Western Australian raw honey</strong></a> today.`
+  ],
 };
 
 export const richText2 = {

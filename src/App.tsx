@@ -1,7 +1,6 @@
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, RouterProvider } from "react-router-dom";
-import Home from "./pages/Home";
+import {  RouterProvider } from "react-router-dom";
 import routes from "./routes";
 import { Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";

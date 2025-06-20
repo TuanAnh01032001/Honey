@@ -1,3 +1,4 @@
+import { AboutSection, DailyUseSection, TotalActivitySection, WAUniqueBenefitsSection, WhyChooseSection } from "@/components";
 import { SEO } from "@/components/SEO";
 
 const About = () =>{
@@ -12,7 +13,11 @@ const About = () =>{
         />
 
         <div>
-            <h1>hello about</h1>
+            <AboutSection/>
+             <WhyChooseSection/>
+            <TotalActivitySection/> 
+            <WAUniqueBenefitsSection/> 
+            <DailyUseSection/>
         </div>
      </>
     );

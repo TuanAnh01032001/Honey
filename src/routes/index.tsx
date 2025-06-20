@@ -4,13 +4,10 @@ import Contact from "@/pages/Contact";
 import Home from "@/pages/Home";
 import Product from "@/pages/Product";
 import { Layout } from "@/pages/shared/Layout";
-
-
 import { createBrowserRouter } from "react-router-dom";
 
-
 const routes = createBrowserRouter([
-    {
+    { 
         path: '/',
         element: <Layout/>,
         children: [

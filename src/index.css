@@ -612,4 +612,19 @@
     backdrop-filter: blur(16px);
     background-color: rgba(0, 0, 0, 0.3);
   }
+
+
+  .hexagon {
+    clip-path: polygon(
+      50% 0%,       /* top center — nhọn */
+      100% 25%,     /* top-right */
+      100% 75%,     /* bottom-right */
+      50% 100%,     /* bottom center — nhọn */
+      0% 75%,       /* bottom-left */
+      0% 25%        /* top-left */
+    );
+    overflow: hidden;
+  }
+  
+  
 }
