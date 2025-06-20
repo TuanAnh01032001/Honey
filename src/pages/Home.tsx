@@ -5,7 +5,6 @@
 // import { Award, Heart, Leaf } from 'lucide-react';
 // import { ArrowRight } from 'lucide-react';
 import ProductList from '@/components/Home/productlist ';
-
 import VideoSection from '@/components/Home/Video';
 
 // Home DataData
@@ -22,6 +21,9 @@ import {
   textSaleHeroData,
 } from '@/data/homeData';
 
+// import image back-round
+import backgroundImage1 from '@/../public/images/backround_1.png';
+
 
 const Home = () => {
   
@@ -34,6 +36,7 @@ const Home = () => {
           className="relative overflow-hidden rounded-t-xl"
           style={{ backgroundColor: bannerData.backgroundColor }}
         >
+          
           {/* Background Image */}
           <div className="relative">
             <img
