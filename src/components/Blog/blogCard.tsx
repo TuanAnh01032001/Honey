@@ -28,14 +28,14 @@ const BlogCard = ({ blog }: BlogCardProps) => {
       
       {/* Black footer with blog info */}
       <div className="bg-black text-white p-4 flex-1 flex flex-col justify-between">
-        <h3 className="text-lg font-bold text-white text-center mb-2 uppercase tracking-wide">
+        <h3 className="text-lg font-bold text-white text-center mb-2 uppercase tracking-wide line-clamp-4 h-[6rem] leading-relaxed">
           {blog.name}
         </h3>
         
      
         <div className="text-center">
           <span
-            className="text-orange-400 font-bold text-lg line-clamp-2"
+            className="text-orange-400 font-bold text-lg line-clamp-2 min-h-12 leading-relaxed"
             dangerouslySetInnerHTML={{
               __html: blog.content
                 ? blog.content.replace(/<[^>]+>/g, '').slice(0, 120) + (blog.content.replace(/<[^>]+>/g, '').length > 120 ? '...' : '')

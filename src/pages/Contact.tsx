@@ -1,4 +1,6 @@
+import { BannerHeader, ContactInfor } from "@/components";
 import { SEO } from "@/components/SEO";
+import banner_contact from "../../public/images/banner_contact.jpg"
 
 const Contact =()=>{
     return (
@@ -12,7 +14,10 @@ const Contact =()=>{
             />
 
             <div>
-                <h1>hello contact</h1>
+                <BannerHeader title="Contact Us" backgroundImage={banner_contact}>
+                   <p className="text-honey-600">HANA HONEY FOR LIFE</p>
+                </BannerHeader>
+                <ContactInfor/>
             </div>
         </>
     )

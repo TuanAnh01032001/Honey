@@ -14,7 +14,7 @@ const About = () =>{
 
         <div>
             <AboutSection/>
-             <WhyChooseSection/>
+            <WhyChooseSection/>
             <TotalActivitySection/> 
             <WAUniqueBenefitsSection/> 
             <DailyUseSection/>

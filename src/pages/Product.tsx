@@ -19,11 +19,8 @@ const Product = () => {
                 title="PURE BEE PRODUCTS"
                 backgroundPosition=""
                 >
-                    <p>
-                         PURE BEE PRODUCTS 
-                    </p>
+                    <p>PURE BEE PRODUCTS</p>
                 </BannerHeader>
-
                 <ProductList/>
             </div>
         </>

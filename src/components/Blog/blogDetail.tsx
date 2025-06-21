@@ -13,13 +13,6 @@ const BlogDetail = () => {
 
   return (
     <>
-      <SEO
-        title={blogItem.name}
-        description={blogItem.price}
-        image={blogItem.image}
-        url={window.location.href}
-        type="blog"
-      />
       <main className="max-w-7xl mx-auto px-4 py-8">
        
         <img src={blogItem.image} alt={blogItem.name} className="w-full h-60 object-cover rounded-xl mb-8 mx-auto" />
