@@ -38,9 +38,7 @@ const Header = () => {
             <a href="/contact" className=" hover:text-amber-600 transition-colors">
               Contact
             </a>
-             <a href="/contact" className=" hover:text-amber-600 transition-colors">
-              Contact
-            </a>
+             
             <a href="/global-partnerships" className="hover:text-amber-600 transition-colors">Global PartnerShips</a>
           </nav>
 
