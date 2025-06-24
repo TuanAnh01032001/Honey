@@ -6,7 +6,7 @@ const SocialSidebar = ()=> {
         <div className="fixed bottom-2 right-12 z-50">
             <div className=" flex flex-col gap-4 items-center justify-center p-4">
                 <a
-                    href="tel:(028) 3820 0584"
+                    href="tel:(+61) 0432189874"
                     className="w-12 h-12 bg-honey-400 rounded-full flex items-center justify-center shadow-lg hover:bg-honey-500 transition-all duration-300 transform hover:scale-110  "
                     aria-label="Gọi điện"
                     onMouseMove={() => setIsHover(true)}
@@ -24,9 +24,8 @@ const SocialSidebar = ()=> {
                         }}
                     >
                     <div className="flex items-center justify-center flex-grow"> 
-                        <Phone size={14} className="text-[#F4A259] mr-2" />
                         <span className="text-gray-700 text-sm whitespace-nowrap font-medium">
-                        (028) 3820 0584
+                        (+61) 0432189874
                         </span>
                     </div>
                     </div>

@@ -14,8 +14,13 @@ const Contact =()=>{
             />
 
             <div>
-                <BannerHeader title="Contact Us" backgroundImage={banner_contact}>
-                   <p className="text-honey-600">HANA HONEY FOR LIFE</p>
+                <BannerHeader 
+                className="text-center"
+                title="Contact Us" 
+                backgroundImage={banner_contact}
+                >
+                    <span className="text-xl md:text-2xl font-medium text-honey-500">HANA HONEY</span>
+                  
                 </BannerHeader>
                 <ContactInfor/>
             </div>

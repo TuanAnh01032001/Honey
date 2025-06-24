@@ -12,6 +12,9 @@ export {default as TotalActivitySection} from './About/TotalActivitySection';
 export {default as WAUniqueBenefitsSection} from './About/WAUniqueBenefitsSection';
 export {default as DailyUseSection} from './About/DailyUseSection';
 export {default as ContactInfor} from './Contact/infor';
+export {default as PartnerShipIntro} from './Partnerships/PartnerShipIntro';
+export { default as ImageSlider} from './Partnerships/ImageSlider';
+export {default as PartnerTestimonials} from './Partnerships/PartnerTestimonials';
 
 
 

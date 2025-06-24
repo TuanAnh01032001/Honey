@@ -14,7 +14,7 @@ const Header = () => {
 
          {/* Logo */}
           <div className="flex-shrink-0 justify-center items-center uppercase h-15">
-            <h1 className="text-5xl font-bold text-Black text-center">HANNA <br/>HONEY For Life</h1>
+            <h1 className="text-5xl font-bold text-Black text-center">HANNA HONEY</h1>
           </div>
 
         <div className="flex justify-between items-center h-16 font-body text-[1.3rem] font-inherit ">
@@ -38,6 +38,10 @@ const Header = () => {
             <a href="/contact" className=" hover:text-amber-600 transition-colors">
               Contact
             </a>
+             <a href="/contact" className=" hover:text-amber-600 transition-colors">
+              Contact
+            </a>
+            <a href="/global-partnerships" className="hover:text-amber-600 transition-colors">Global PartnerShips</a>
           </nav>
 
           {/* Cart and Mobile Menu */}
@@ -83,6 +87,7 @@ const Header = () => {
               <a href="/blog" className="py-4 border-b border-[#f3c96b]">Blog</a>
               <a href="/about" className="py-4 border-b border-[#f3c96b]">About Us</a>
               <a href="/contact" className="py-4 border-b border-[#f3c96b]">Contact</a>
+              <a href="/global-partnerships" className="py-4 border-b border-[#f3c96b]">Global PartnerShips</a>
             </nav>
 
           </div>

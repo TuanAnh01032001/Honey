@@ -1,3 +1,4 @@
+import Partnerships from "@/pages/Partnerships";
 import { Layout } from "@/pages/shared/Layout";
 import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
@@ -20,7 +21,8 @@ const routes = createBrowserRouter([
             {path: '/about', element: <About/>},
             {path: '/blog', element: <Blog/>},
             {path: '/blog/:id', element: <BlogDetail/>},
-            {path: '/contact', element: <Contact/>}
+            {path: '/contact', element: <Contact/>},
+            {path: '/global-partnerships', element: <Partnerships/>}
         ]
     }
 ]);
