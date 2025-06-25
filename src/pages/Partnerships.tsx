@@ -1,9 +1,10 @@
 import { BannerHeader, ImageSlider, PartnerShipIntro, PartnerTestimonials } from "@/components"
+import banner_partnership from "/images/banner-partnetship.jpg"
 
 const Partnerships = ()=>{
   return(
     <>
-        <BannerHeader title="" className="w-full h-full" backgroundImage="https://images.unsplash.com/photo-1469041797191-50ace28483c3?q=80&w=2076&auto=format&fit=crop">
+        <BannerHeader title="" className="w-full h-full" backgroundImage={banner_partnership}>
             <div className="text-center max-auto px-6 h-full">
                 <h1 className="text-5xl md:text-7xl font-bold text-amber-800 mb-6 leading-tight animate-fade-in">
                 Together, We Bring Premium 

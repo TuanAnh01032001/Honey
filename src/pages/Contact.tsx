@@ -1,6 +1,6 @@
 import { BannerHeader, ContactInfor } from "@/components";
 import { SEO } from "@/components/SEO";
-import banner_contact from "../../public/images/banner_contact.jpg"
+import banner_contact from "images/banner_contact.jpg"
 
 const Contact =()=>{
     return (
