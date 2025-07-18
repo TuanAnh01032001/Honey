@@ -34,7 +34,7 @@ export const blog: Blog[] = [
     {
         id: 2,
         name: "USING HONEY AS A NATURAL SKINCARE REMEDY: DIY TREATMENTS",
-        image: "https://honeyforlife.com.au/cdn/shop/articles/MIXED_SUBSCRIPTION.png?v=1746598017",
+        image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1751026912/01874586-e202-45ce-9075-2f4673170065_ny18ax.jpg",
         hoverImage: "https://images.unsplash.com/photo-1545246909-b4e087f05214?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGhvbmV5fGVufDB8fDB8fHww",
         content: `
           <h2>Using Honey as a Natural Skincare Remedy: DIY Treatments</h2>
@@ -148,7 +148,7 @@ export const blog: Blog[] = [
     {
         id: 3,
         name: "DESERT MALLEE HONEY: AWARD-WINNING FLAVOUR FROM THE HEART OF AUSTRALIA",
-        image: "https://honeyforlife.com.au/cdn/shop/articles/Blog_Banners.png?v=1719290526&width=1500",
+        image: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1751026921/480487812_122223334028211632_5476122042152771841_n_vcunwl.jpg",
         hoverImage: "https://images.unsplash.com/photo-1654515722385-c684c5331c04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhvbmV5fGVufDB8fDB8fHww",
         content: `
           <h2>Desert Mallee Honey: Award-Winning Flavour from the Heart of Australia</h2>

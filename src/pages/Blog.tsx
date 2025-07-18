@@ -4,6 +4,7 @@ import { SEO } from "@/components/SEO";
 import { blog } from "@/data/blog";
 import { products } from "@/data/product";
 import { useNavigate } from "react-router-dom";
+import Video from "@/components/Blog/Video";
 
 const Blog = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -22,8 +23,8 @@ const Blog = () => {
         navigate(`/blog/${id}`);
     };
 
-    return(
-        <> 
+    return (
+        <>
             <SEO
                 title="5 Surprising Health Benefits of Raw Honey"
                 description="Learn how raw honey improves your immune system, digestion, and energy levels naturally."
@@ -31,13 +32,13 @@ const Blog = () => {
                 url="https://hanahoney.com.au/blog/health-benefits-raw-honey"
                 type="blog"
             />
-            
-        <main id="MainContent" className="content-for-layout focus-none" role="main" tabIndex={-1}>
-            <div className="main-site-container max-w-8xl mx-auto px-4 sm:px-6 lg:px-40">
-                <span className="title--primary text-4xl font-extrabold ">Discover</span>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-8">
-                        {currentBlogs.map((item, index)=> {
-                            return(
+
+            <div className="content-for-layout focus-none" role="main" tabIndex={-1}>
+                <div className="main-site-container max-w-8xl mx-auto px-4 sm:px-6 lg:px-40">
+                    <h1 className="title--primary text-4xl font-extrabold ">Discover</h1>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-8">
+                        {currentBlogs.map((item, index) => {
+                            return (
                                 <div key={index} onClick={() => handleBlogClick(item.id)} className="cursor-pointer">
                                     <BlogCard blog={item} />
                                 </div>
@@ -59,7 +60,8 @@ const Blog = () => {
                         </div>
                     )}
                 </div>
-        </main>
+                <Video />
+            </div>
         </>
     )
 }

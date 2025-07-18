@@ -15,7 +15,7 @@ const Product = () => {
             <div>
 
                 <BannerHeader 
-                backgroundImage="../../public/images/banner_header_product.png" 
+                backgroundImage="/images/banner_header_product.png" 
                 title="PURE BEE PRODUCTS"
                 backgroundPosition=""
                 >
