@@ -22,7 +22,7 @@ const Header = () => {
           </button>
         </div>
         <div className="flex-shrink-0  md:w-full text-center p-1">
-          <h1 className="text-4xl md:text-5xl font-bold text-black ">HANNA HONEY</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-black ">HANNA'S HONEY</h1>
         </div>
 
         <div className="flex justify-between items-center h-16 font-body text-[1.3rem] font-inherit ">
