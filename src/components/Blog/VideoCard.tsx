@@ -1,4 +1,5 @@
 import { Play } from "lucide-react";
+import { useState } from "react";
 
 interface Props {
     video: {
@@ -35,7 +36,7 @@ const VideoCard = ({ video, onClick }: Props) => {
             </div>
 
             {/* Title */}
-            <div className="p-4">
+            <div className="p-2">
                 <h3 className="font-medium text-lg text-gray-800">{video.title}</h3>
             </div>
         </div>

@@ -4,7 +4,7 @@ import { SEO } from "@/components/SEO";
 import { blog } from "@/data/blog";
 import { products } from "@/data/product";
 import { useNavigate } from "react-router-dom";
-import Video from "@/components/Blog/Video";
+import ListVideo from "@/components/Blog/ListVideo";
 
 const Blog = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -60,7 +60,7 @@ const Blog = () => {
                         </div>
                     )}
                 </div>
-                <Video />
+                <ListVideo />
             </div>
         </>
     )

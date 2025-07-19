@@ -4,6 +4,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import VideoCard from './VideoCard';
+import { useState } from 'react';
+import VideoModal from './VideoModal';
+
 
 interface VideoData {
     id: number;
@@ -12,7 +15,9 @@ interface VideoData {
     thumbnail: string;
 }
 
-const Video = () =>{
+const ListVideo = () =>{
+    const [isOpenVideo, setIsOpenVideo] = useState<boolean>(false);
+    const [selectedVideo, setSelectedVideo] = useState<VideoData | null>(null);
     const dataVideo: VideoData[] = [
         {
             id: 1,
@@ -63,6 +68,15 @@ const Video = () =>{
             thumbnail: "https://res.cloudinary.com/dwqqve7ja/image/upload/v1752848102/beekeeper-2650664_640_h2fg2v.jpg"
         }
     ]
+    const handleOpen = (item: VideoData)=>{
+        setSelectedVideo(item);
+        setIsOpenVideo(true);
+        
+    }
+    const handleClose= () => {
+    //   setSelectedVideo(null);
+      setIsOpenVideo(false)
+    }
     return(
         <section className="py-16">
             <div className="container max-w-8xl mx-auto px-4 sm:px-6 lg:px-40">
@@ -70,6 +84,7 @@ const Video = () =>{
                 <div className="mt-8">
                    <Swiper
                    modules={[Navigation, Pagination, Autoplay]}
+                   autoplay={{ delay: 3000, disableOnInteraction: false }}
                    slidesPerView={1}
                    spaceBetween={20}
                    breakpoints={
@@ -82,19 +97,21 @@ const Video = () =>{
                    >
                     {dataVideo.map((item, idx) => {
                         return(
-                            <SwiperSlide>
-                                <div>
-                                    <VideoCard video={item}/>
+                            <SwiperSlide key={idx}>
+                                <div className="mt-2 mb-2">
+                                    <VideoCard video={item} onClick={()=>handleOpen(item)}/>
                                 </div>
                             </SwiperSlide>
                         )
                     })}
-                   
                    </Swiper>
                 </div>
+                {isOpenVideo && selectedVideo &&(
+                    <VideoModal isOpen={isOpenVideo} onClose={handleClose} video={selectedVideo} />
+                )}
             </div>
         </section>
     )
 }
 
-export default Video;
+export default ListVideo;

@@ -13,7 +13,7 @@ interface VideoModalProps {
   };
 }
 
-const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose, video }) => {
+const OpenModal: React.FC<VideoModalProps> = ({ isOpen, onClose, video }) => {
   // Prevent scrolling when modal is open
   useEffect(() => {
     if (isOpen) {
@@ -76,4 +76,4 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose, video }) => {
   );
 };
 
-export default VideoModal;
+export default OpenModal;
